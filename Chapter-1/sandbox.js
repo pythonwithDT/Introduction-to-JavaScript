@@ -7,12 +7,13 @@
 //age=(25);
 //console .log(age);
 
+// ---------------------------------------------------- ///
 
 // --- Constants --- //   
 //const points = 100;  
 //console.log(points);
 
-
+// ---------------------------------------------------- ///
 
 // Javascript Data Types //
 
@@ -59,7 +60,7 @@
 //let result = email.replace('n', 'w');
 //console.log(result)
 
-
+// ---------------------------------------------------- ///
 
 
 // -- Numbers --- //
@@ -99,7 +100,7 @@
 //let result = 'the blog has ' + likes + ' likes';
 //console.log(result);
 
-
+// ---------------------------------------------------- ///
 
 // -- template strings or template literal  
 //const title = 'Best reads of 2019';
@@ -124,27 +125,82 @@
 //`;
 //console.log(html);
 
+// ---------------------------------------------------- ///
+
+
 
 // -- Arrays -- // -- they are used to store collecton of things like strings or numbers 
-let ninjas = ['shaun', 'ryu', 'chun-li'];
+//let ninjas = ['shaun', 'ryu', 'chun-li'];
 
-console.log(ninjas);
+//console.log(ninjas);
  
-ninjas[2] = 'ben';  // -- override certain values in an array  
-console.log(ninjas[2]);
+//ninjas[2] = 'ben';  // -- override certain values in an array  
+//console.log(ninjas[2]);
 
-let ages = [20,30,40,50,45]
-console.log(ages[2]);
+//let ages = [20,30,40,50,45]
+//console.log(ages[2]);
 
-let random = ['shaun', 'crystal', 30, 20]
-console.log(random);
+//let random = ['shaun', 'crystal', 30, 20]
+//console.log(random);
 
 
 // Array Methods //
 
-console.log(ninjas.length);
+//console.log(ninjas.length); // - lenght property 
 
-// Boolean
-// Undefined
-// Null
+// let result = ninjas.join('_')
+
+//let result = ninjas.indexOf('ryu')
+
+//let result = ninjas.concat(['ken', 'crytal']);
+
+//let result = ninjas.push('ken');
+//result = ninjas.pop();
+
+
+//console.log(result)
+
+
+// ---------------------------------------------------- ///
+
+
+// Boolean -- booleans evaluate conditions in our code to check if things are true or false //
+// booleans & comparisons 
+console.log(true, false, 'false', 'true');
+
+// methods can return booleans
+
+let email = 'luigi@thenetninja.co.uk';
+let names = ['mario', 'luigi', 'toad']
+
+//let result = email.includes('!');
+let result = names.includes('luigi');
+
+console.log(result);
+
+
+// comparison operators 
+ 
+let age = 25
+
+console.log(age == 25);
+console.log(age == 30);
+console.log(age != 25); // - not equal to 
+console.log(age > 25); // - greater than
+console.log(age < 25); // - less than
+console.log(age >= 20); // - greater than or equal to
+console.log(age <= 25); // - less than or equal to
+
+
+
+// ---------------------------------------------------- ///
+
+// Undefined --- // Null --- //
+// undefined is a type of value that is assigned to a variable that has not been assigned a value
+
+//let age;
+
+//console.log(age, age + 3, `the age is ${age}`);
+
+
 // Object
