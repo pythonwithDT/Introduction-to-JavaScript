@@ -146,22 +146,44 @@
 
 const grade = 'D'
 
-
-// using if statements 
-
-if(grade === 'A'){
-
-} else if(grade === 'B'){
-
-} else if(grade == 'C'){
-
-} else if(grade === 'D'){
-
-} else if(grade === 'E'){
-
-}else {
-    
+switch(grade){
+    case 'A':
+        console.log('you are a genius');
+        break;
+    case 'B':
+        console.log('you are a smart cookie');
+        break;
+    case 'C':
+        console.log('you are a good student');
+        break;
+    case 'D':
+        console.log('you are a hard worker');
+        break;
+    case 'E':
+        console.log('you are a good person');
+        break;
+    case 'F':
+        console.log('you are a bad person');
+        break;
+    default:
+        console.log('you are a sweet person');
 }
+
+
+// variables & block scope 
+
+let age = 30;
+
+if(true){
+    let age = 31;
+    console.log('inside 1st code of block: ', age);
+
+    if(true){
+    console.log('inside 2nd code of block: ', age);
+    }
+}
+
+console.log("outside code block: ", age);
 
 
 
