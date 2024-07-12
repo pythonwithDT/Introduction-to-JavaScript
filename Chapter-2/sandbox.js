@@ -55,6 +55,31 @@
 //} while(i < 5);
 
 
+
+// break and continue 
+
+//const scores = [50, 25, 0, 30, 100, 20, 10] 
+
+//for(let i = 0; i < scores.length; i++){
+     
+//    if(scores[i] === 0){
+//        console.log('Game over');
+//        continue;
+//    }
+
+//    console.log('your score: ', scores[i]);
+
+ //   if(scores[i] === 100){
+ //       console.log('you got the high score!');
+ //       break;
+ //   }
+//}
+
+
+
+
+
+
 // if statements
 
 //const age = 25 
@@ -93,15 +118,56 @@
 
 // Logical operators - OR || and AND &&
 
-const passwordi = 'wjhduwh@'
+//const passwordi = 'wjhduwh@'
 
-if(passwordi.length >= 12  && passwordi.includes('@')){
-    console.log("that password is mighty strong");
-} else if(passwordi.length >= 8 || passwordi.includes('@') && passwordi.length >5){
-    console.log("that password is long enough");
-} else {
-    console.log("password is not long enough");
+//if(passwordi.length >= 12  && passwordi.includes('@')){
+//    console.log("that password is mighty strong");
+//} else if(passwordi.length >= 8 || passwordi.includes('@') && passwordi.length >5){
+//    console.log("that password is long enough");
+//} else {
+//    console.log("password is not long enough");
+//}
+
+
+// Logical NOT (!)
+
+//console.log(!true);
+//console.log(!false);
+//
+//let user = false;
+
+//if(!user){
+//    console.log("you must be logged in to view this page");
+//}
+
+
+
+// switch statements 
+
+const grade = 'D'
+
+
+// using if statements 
+
+if(grade === 'A'){
+
+} else if(grade === 'B'){
+
+} else if(grade == 'C'){
+
+} else if(grade === 'D'){
+
+} else if(grade === 'E'){
+
+}else {
+    
 }
+
+
+
+
+
+
 
 
 
