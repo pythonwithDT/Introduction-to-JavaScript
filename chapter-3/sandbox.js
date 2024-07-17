@@ -112,6 +112,65 @@
 // console.log(bill([10,25,30], 0.2));
 
 
+// methods & functions
+
+// functions
+
+// const greet = () => "hello";
+
+// let resultOne = greet();
+// console.log(resultOne);
+
+// methods 
+
+// const person = "shaun";
+
+// let resultTwo = person.toUpperCase();
+// console.log(resultTwo); 
+
+
+// callback & forreach
+
+// const myFunc = (callbackFunc) => {
+//     // do something 
+//     let value = 50;
+//     callbackFunc(value);   
+// };
+
+// myFunc(function(value){  // -regular function
+//     // do something
+//     console.log(value);
+// });
+
+// myFunc(value => {  // - arrow function
+//     // do something
+//     console.log(value);
+// });
+
+// let people = ["mario", "luigi", "ryu", "shaun", "chun-li"]; 
+
+// people.forEach(function(person){  // -regular function
+//     console.log(person);
+// });
+
+
+// people.forEach((person, index) => {  // -arrow function 
+//     console.log( index, person,);
+// });
+
+
+// defining a callback function somewhere else and passing it into the foreach method or any method
+
+let people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
+
+const logPerson = (person, index) => {
+    console.log(`${index} - hello ${person}`);
+}
+
+people.forEach(logPerson);
+
+
+
 
 
 
