@@ -1,4 +1,4 @@
-// function declaration
+// // function declaration
 // function greet(){
 //     console.log("Hello World");
 // }
@@ -7,14 +7,14 @@
 
 
 
-// function expression  -- when we store a function into a variable
+// // function expression  -- when we store a function into a variable
 // const speak = function(){
 //    console.log("Good day!");
 // };
 // speak();
 
 
-// Hoisting with declaration and expression
+// // Hoisting with declaration and expression
 
 // greet();
 // greet();
@@ -24,7 +24,7 @@
 // } // hositing works with function decalration not function 
 
 
-// arguments & parameters 
+// // arguments & parameters 
  
 // const speak = function(name){  // name - is an parameter
 //     console.log(`good day ${name}`);
@@ -44,7 +44,7 @@
 // speak("shaun") 
 
 
-// returning values 
+// // returning values 
 
 
 // const calcArea = function(raduis){
@@ -61,7 +61,7 @@
 // };
 
 
-// arrow function
+// // arrow function
 
 // const calcArea = radius => {  // if u are to pass two characters, u need the parenthesis
 //     return 3.14 * radius**2; 
@@ -79,13 +79,13 @@
 
 
 
-// pratice arrow functions 
+// // pratice arrow functions 
 
 // const greet = function(){ // - regular function
 //    return "hello, world";
 // };
 
-// solution 
+// // solution 
 
 // const greet = () => "hello, world"; // - arrow function
 // const result = greet();
@@ -112,16 +112,16 @@
 // console.log(bill([10,25,30], 0.2));
 
 
-// methods & functions
+// // methods & functions
 
-// functions
+// // functions
 
 // const greet = () => "hello";
 
 // let resultOne = greet();
 // console.log(resultOne);
 
-// methods 
+// // methods 
 
 // const person = "shaun";
 
@@ -129,7 +129,7 @@
 // console.log(resultTwo); 
 
 
-// callback & forreach
+// // callback & forreach
 
 // const myFunc = (callbackFunc) => {
 //     // do something 
@@ -159,15 +159,38 @@
 // });
 
 
-// defining a callback function somewhere else and passing it into the foreach method or any method
+// // defining a callback function somewhere else and passing it into the foreach method or any method
 
-let people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
+// let people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
 
-const logPerson = (person, index) => {
-    console.log(`${index} - hello ${person}`);
-}
+// const logPerson = (person, index) => {
+//     console.log(`${index} - hello ${person}`);
+// }
 
-people.forEach(logPerson);
+// people.forEach(logPerson);
+
+
+// // get a reference to the "ul"
+
+// const ul = document.querySelector(".people");
+
+// const people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
+
+// let html = ``;
+
+// people.forEach(function(person){  // -regular function
+//     html += `<li style="color: purple">${person}</li>`
+// });
+
+// console.log(html);
+// ul.innerHTML = html;
+
+// people.forEach(person => {  // -arrrow function
+//     html += `<li style="color: purple">${person}</li>`
+// });
+
+// console.log(html);
+// ul.innerHTML = html;
 
 
 
