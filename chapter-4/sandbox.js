@@ -49,19 +49,33 @@
 
  // chnaging text
 
- const para = document.querySelector('p');
+//  const para = document.querySelector('p');
 
- para.textContent = ' ninjas are awesome!'; // - to change the text of an element
+//  para.textContent = ' ninjas are awesome!'; // - to change the text of an element
 
- console.log(para);
+//  console.log(para);
 
  // changing yext of several items
 
- const paras = document.querySelectorAll('p');
+//  const paras = document.querySelectorAll('p');
 
- paras.forEach(callback => {
-    console.log(callback.innerText);
-    callback.innerText += ' ninjas are awesome!';
- });
+//  paras.forEach(callback => {
+//     console.log(callback.innerText);
+//     callback.innerText += ' ninjas are awesome!';
+//  });
 
- 
+// changing the html of somethig 
+
+// const content = document.querySelector('.content');
+
+// content.innerHTML += '<h2>THIS IS A NEW H2</h2> <p>this is awesome!</P>';
+// console.log(content);
+
+
+// embeding into the html
+
+// const people = ['mario', 'luigi', 'yoshi'];
+
+// people.forEach(callback => {
+//     content.innerHTML += `<p>${callback}</p>`
+// });
