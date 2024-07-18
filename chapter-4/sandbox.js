@@ -79,3 +79,47 @@
 // people.forEach(callback => {
 //     content.innerHTML += `<p>${callback}</p>`
 // });
+
+
+
+// how to get and set and attribute 
+
+// const link = document.querySelector('a');
+
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.emmanueltdortey.co.ca/');
+// link.innerHTML = 'PYHTONWITHDT WEBSITE';
+
+
+// const mssg = document.querySelector('p');
+
+// console.log(mssg.getAttribute('class'));
+// mssg.setAttribute('class', 'special');
+
+
+// how to set attributes that dont exit
+
+// mssg.setAttribute('style', 'color:purple;');
+
+
+// how to add style to a text
+
+// const title = document.querySelector('h1');
+
+// tittle.setAttribute('style', ;'margin: 50px');  // - this overrides the current attribute that has been set which is the color 
+
+// title.style.margin = '50px';
+// title.style.color = 'purple';  // -overwritten the original color
+// console.log(title.style);
+
+
+// change font-size
+
+// title.style.fontSize = '60px';
+
+// delete a style 
+
+// title.style.margin = '';
+
+
+// how to add and remove classes from element
