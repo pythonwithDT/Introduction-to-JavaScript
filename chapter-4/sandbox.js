@@ -31,7 +31,7 @@
  
 
 
-// Gget element by thier class name 
+// get element by thier class name 
 
 // const errors = document.getElementsByClassName('error'); // - cant use for each in an HTMLcollection
 
@@ -143,4 +143,13 @@ paras.forEach(p => {
         p.classList.add('success')
     }
 });
+
+
+// how to toggle a class -
+
+const title = document.querySelector(".title");
+
+title.classList.toggle('error'); // -- add
+title.classList.toggle('error'); // -- remove
+
  
