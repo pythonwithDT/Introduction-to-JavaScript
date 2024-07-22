@@ -56,12 +56,12 @@
 
 // // grabbing every single tag
 
-const booki = document.querySelectorAll('#book-list li .name'); // - multiple elements
+// const booki = document.querySelectorAll('#book-list li .name'); // - multiple elements
 // console.log(booki);
 
 
-// how to cycle through  collection of books
+// // how to cycle through  collection of books
 
-Array.from(booki).forEach(function(book){
-    console.log(book);
-})
+// Array.from(booki).forEach(function(book){
+//     console.log(book);
+// })
