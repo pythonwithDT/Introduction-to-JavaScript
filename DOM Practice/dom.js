@@ -141,6 +141,42 @@ list.addEventListener('click', function(e){
         const li = e.target.parentElement;
         list.removeChild(li);
     }
+});
+
+
+
+// add booklist 
+
+const addform = document.forms['add-book'];
+addform.addEventListener('submit', function(e){
+    e.preventDefault();
+    const value = addform.querySelector('input[type="text"]').value;
+    
+    // create elements
+
+    const li = document.createElement('li');
+    const bookName = document.createElement('span');
+    const deleteBtn = document.createElement('span'); 
+    
+    
+    // add contnent 
+
+    deleteBtn.textContent = 'delete';
+    bookName.textContent = value;
+
+
+    // add classes
+    
+    bookName.classList.add('name');
+    deleteBtn.classList.add('delete');
+
+    // append to document
+
+    li.appendChild(bookName);
+    li.appendChild(deleteBtn);
+    list.appendChild(li);
+
+
 })
  
 
