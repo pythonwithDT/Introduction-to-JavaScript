@@ -80,5 +80,68 @@
 // booklist.innerHTML += '<p>This is a new p tag</p>'
 
 
-// dom nodes 
+// // dom nodes 
+
+// const banner = document.querySelector('#page-banner')
+
+// console.log('#page-banner node type is:', banner.nodeType);
+// console.log('#page-banner node name is:', banner.nodeName);
+
+// console.log('#page-banner has any child nodes?', banner.hasChildNodes());
+
+// // clone a node 
+
+// const clonedBanner = banner.cloneNode(true);
+// console.log('clonedBanner', clonedBanner);
+
+
+// // dom traversal(parent-child)
+
+// const booklist = document.querySelector('#book-list');
+
+// console.log('the name of the node is:', booklist.parentNode);
+
+// console.log('the parent element is:', booklist.parentElement.parentElement);
+
+// console.log(booklist.childNodes);  
+// console.log(booklist.children);  // - elements
+
+
+// // dom traversal(sibling)
+
+// const booklist = document.querySelector('#book-list');
+
+// console.log('book-list next sibling is:', booklist.nextSibling);
+// console.log('book-list next element sibling is:', booklist.nextElementSibling);
+
+
+// console.log('book-list previous sibling is:', booklist.previousSibling);
+// console.log('book-list previous element sibling is:', booklist.previousElementSibling);
+
+// booklist.previousElementSibling.querySelector('p').innerHTML += '<br /> Too cool for every one else!';
+
+
+//  // dom events - removing content
+
+// const btns = document.querySelectorAll('#book-list .delete');
+
+// Array.from(btns).forEach(function(btn){
+//     btn.addEventListener('click', function(e){
+//         const li = e.target.parentElement;
+//         li.parentNode.removeChild(li);
+//     });
+// });
+
+
+// event bubbling
+
+const list = document.querySelector('#book-list ul');
+list.addEventListener('click', function(e){
+    if(e.target.className == 'delete'){
+        const li = e.target.parentElement;
+        list.removeChild(li);
+    }
+})
+ 
+
 
