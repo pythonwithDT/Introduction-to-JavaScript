@@ -65,3 +65,20 @@
 // Array.from(booki).forEach(function(book){
 //     console.log(book);
 // })
+
+
+// // edititng hmtl and text
+
+// const books = document.querySelectorAll('#book-list li .name');
+
+// Array.from(books).forEach(function(book){
+//     book.textContent += ' (book title)';
+// });
+
+
+// const booklist = document.querySelector('#book-list');
+// booklist.innerHTML += '<p>This is a new p tag</p>'
+
+
+// dom nodes 
+
