@@ -133,9 +133,12 @@
 // });
 
 
-// event bubbling
+document.addEventListener('DOMContentLoaded', function(){
+    // event bubbling
 
 const list = document.querySelector('#book-list ul');
+
+// delete books
 list.addEventListener('click', function(e){
     if(e.target.className == 'delete'){
         const li = e.target.parentElement;
@@ -169,6 +172,10 @@ addform.addEventListener('submit', function(e){
     li.appendChild(bookName);
     li.appendChild(deleteBtn);
     list.appendChild(li);
+
+
+    // clear the add book input field after adding the book 
+    addform.querySelector('input[type=text]').value = '';
 })
 
 
@@ -198,6 +205,28 @@ searchBar.addEventListener('keyup', function(e){
                 book.style.display = 'none';
                 }
             });
+            // searchBar.value = '';
 });
             
 
+// tabed content
+
+const tabs = document.querySelectorAll('.tabs');
+const panels = document.querySelectorAll('.panel');
+tabs.forEach(function(tab){
+    tab.addEventListener('click', function(e){
+        if(e.target.tagName === 'LI'){
+            const targetPanel = document.querySelector(e.target.dataset.target);
+            panels.forEach(function(panel){
+                if(panel === targetPanel){
+                    panel.classList.add('active');
+                }else {
+                    panel.classList.remove('active');
+                }
+            });
+        }
+    });
+
+});
+
+})
