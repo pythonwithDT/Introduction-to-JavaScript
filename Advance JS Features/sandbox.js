@@ -111,7 +111,7 @@
 // console.log(tesla.engine());
 
 const band = {
-    vocals: "🦁",
+    vocals: "Robert Plant",
     guitar: "Jimmy Page",
     bass: "John Paul Jones",
     drums: "John Bohman"
