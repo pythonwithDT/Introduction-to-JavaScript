@@ -17,8 +17,18 @@
 
 // checking if someone is old enough to drive 
 
-if (15 >= 16) {
-    console.log('You can drive');
-} else {
-    console.log('You cannpt drive');
-}
+// if (15 >= 16) {
+//     console.log('You can drive');
+// } else {
+//     console.log('You cannot drive');
+// }
+
+
+// logical operators 
+
+// AND operator &&
+
+console.log(true && false); // this checks if both sides are true 
+
+console.log(0.2 >= 0 && 0.2 < 1/3);
+
