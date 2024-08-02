@@ -28,7 +28,16 @@
 
 // AND operator &&
 
-console.log(true && false); // this checks if both sides are true 
+// console.log(true && false); // this checks if both sides are true 
 
-console.log(0.2 >= 0 && 0.2 < 1/3);
+// console.log(0.2 >= 0 && 0.2 < 1/3);
 
+
+// or OPERATOR  ||
+
+console.log(false || false);
+
+// not operator !
+
+console.log(!true)
+ 
