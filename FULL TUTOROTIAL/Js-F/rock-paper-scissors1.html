@@ -42,9 +42,9 @@
 
     <button onclick="
         
-        console.log(pickComputerMove());
+        const computerMove = pickComputerMove(); // after click this run first (1)
 
-        if (computerMove === 'rock') {
+        if (computerMove === 'rock') {   // returns back to check this code (4)
             result = 'You lose'
         } else if (computerMove === 'paper') {
             result = 'You Win'
@@ -52,16 +52,16 @@
             result = 'Tie'
           }
 
-        alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+        alert(`You picked scissors. Computer picked ${computerMove}. ${result}`); // provides the final answer 
     
     ">Scissors</button>
 
 <script>
-    let computerMove = '';
+    
     function pickComputerMove() {
-        const randomNum = Math.random();
+        const randomNum = Math.random(); // run all this code from top to  bottom (2)
 
-        
+        let computerMove = '';
         
 
         if (randomNum >= 0 && randomNum < 1 / 3) {
@@ -71,8 +71,7 @@
          } else if(randomNum >= 2 / 3 && randomNum < 1){
              computerMove = 'scissors'
           }
-       return
-       console.log('after');
+       return computerMove; // returns this back to where it was called (3)
     }
 
 </script>
