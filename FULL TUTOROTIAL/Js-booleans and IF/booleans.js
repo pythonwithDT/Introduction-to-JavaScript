@@ -33,11 +33,40 @@
 // console.log(0.2 >= 0 && 0.2 < 1/3);
 
 
-// or OPERATOR  ||
+// // or OPERATOR  ||
 
-console.log(false || false);
+// console.log(false || false);
 
-// not operator !
+// // not operator !
 
-console.log(!true)
+// console.log(!true)
+
+
+// // Truthy and Flasy Values 
+
+// if (0) {
+//     console.log('truthy')
+// }
  
+// const cartQuantity = 5
+
+// if (cartQuantity) {
+//     console.log('cart has products');
+// }
+
+
+// // gaurd operator &&
+
+// false && console.log('hello');
+
+// if (consition) {
+//     console.log('hello')
+// }
+
+
+// default operator 
+
+const currency =  undefined   || 'USD';
+console.log(currency)
+
+
