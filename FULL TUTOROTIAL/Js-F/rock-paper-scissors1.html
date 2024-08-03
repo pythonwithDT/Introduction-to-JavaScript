@@ -10,7 +10,7 @@
 
     <p>Rock Paper Scissors</p>
     <button onclick="
-       pickComputerMove();
+       const computerMove = pickComputerMove()
 
         if (computerMove === 'rock') {
             result = 'Tie'
@@ -25,7 +25,7 @@
     ">Rock</button>
 
     <button onclick="
-        pickComputerMove();
+        const computerMove = pickComputerMove()
        
 
         if (computerMove === 'rock') {
@@ -52,7 +52,7 @@
             result = 'Tie'
           }
 
-        alert(`You picked scissors. Computer picked ${computerMove}. ${result}`); // provides the final answer 
+        alert(`You picked scissors. Computer picked ${computerMove}. ${result}`); // provides the final answer (5) 
     
     ">Scissors</button>
 
