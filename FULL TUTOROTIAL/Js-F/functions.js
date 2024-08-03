@@ -9,7 +9,7 @@
 
 // parameters   
 
-function calculateTax(cost, taxPercent = 0.1) {
+function calculateTax(cost, taxPercent = 0.1 ) {
     console.log(cost * taxPercent); 
 }
 
