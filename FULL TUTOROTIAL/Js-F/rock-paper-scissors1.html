@@ -41,8 +41,9 @@
     ">Papper</button>
 
     <button onclick="
-        playgame('scissors');
         
+        playGame('scissors');
+    
     ">Scissors</button>
 
 <script>
@@ -50,18 +51,19 @@
     function playGame(playerMove) {
         const computerMove = pickComputerMove(); // after click this run first (1)
 
-        if (playerMove === 'scissors') {
+        let result = '';
+
+        if (playerMove === 'scissor') {
             if (computerMove === 'rock') {   // returns back to check this code (4)
-                result = 'You lose.'
+                result = 'You lose'
             } else if (computerMove === 'paper') {
-                result = 'You Win.'
+                result = 'You Win'
              } else if (computerMove === 'scissors') {
-                result = 'Tie.'
+                result = 'Tie'
               }
         }
 
         alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`); // provides the final answer (5) 
-    
     }
     
     function pickComputerMove() {
