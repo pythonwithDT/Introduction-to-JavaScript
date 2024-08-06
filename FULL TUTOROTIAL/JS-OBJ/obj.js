@@ -26,6 +26,10 @@
 const product2 = {
     name: 'shirt',
     'dilivery-time': '1 day', 
+    rating: {
+        stars: 46,
+        count: 87
+    },
     fun: function() {  // function inside an object is a method
         console.log('function inside object')
     }
@@ -34,4 +38,14 @@ const product2 = {
 console.log(product2['name']) //. braccker notation
 console.log(product2['dilivery-time']);
 product2.fun();
+
+console.log(JSON.stringify(product2));
+
+const jsonString = JSON.stringify(product2); // converting back to a js odj
+ 
+console.log(JSON.parse(jsonString));
+
+
+
+
 
