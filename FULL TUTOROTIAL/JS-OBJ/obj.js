@@ -41,6 +41,7 @@ product2.fun();
 
 console.log(JSON.stringify(product2));
 
+
 const jsonString = JSON.stringify(product2); // converting back to a js odj
  
 console.log(JSON.parse(jsonString));
