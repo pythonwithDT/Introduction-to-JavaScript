@@ -18,6 +18,11 @@
 // document.body.innerHTML = '<button>Good Job</button>'
 
 
-console.log(document.querySelectorAll('button').innerHTML);
+console.log(document.querySelector('button').innerHTML);
 document.querySelector('button')
-    .innerHTML = 'changed'
+.innerHTML = 'changed';
+
+console.log(document.querySelector('.js-button'));
+
+const buttonElement = document.querySelector('.js-button')
+console.log(buttonElement);
