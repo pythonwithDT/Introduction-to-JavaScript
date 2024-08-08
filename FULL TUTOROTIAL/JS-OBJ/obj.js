@@ -84,8 +84,34 @@
 // shortcuts for objects 
 
 const object4 = {
-    message: 'Good Job'
+    message: 'Good Job',
+    price: 899
 };
 // const message = object4.message 
 
-const { message } = object4
+const { message, price } = object4
+
+console.log(message);
+console.log(price);
+
+
+// shorthand property 
+
+const object5 = {
+    // message: message
+    message,
+
+    // method: function function1() {
+    //     console.log('method')
+    // }
+    method() {
+        console.log('method');
+    }
+};
+
+console.log(object5);
+object5.method();
+ 
+
+
+// shorthand method 
