@@ -104,7 +104,7 @@ const object5 = {
     // method: function function1() {
     //     console.log('method')
     // }
-    method() {
+    method() {  // shorthand method 
         console.log('method');
     }
 };
@@ -114,4 +114,4 @@ object5.method();
  
 
 
-// shorthand method 
+
