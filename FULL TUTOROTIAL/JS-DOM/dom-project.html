@@ -23,15 +23,22 @@
 
     ">Calculate</button>
 
-    <p></p>
+    <p class="js-total-cost"></p>
     <p></p>
 
 
-    <SCript>
+    <script>
 
     function calculateTotal() {
-        const buttonElement = document.querySelector('.js-cost-input');
-        
+        const inputElement = document.querySelector('.js-cost-input');
+        let cost = Number(inputElement.value);
+
+        if (cost < 40) {
+            cost = cost + 10;
+        }
+
+        document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
+
     }
 
     function subscribe () {
@@ -45,6 +52,6 @@
     
     }
 
-    </SCript>
+    </script>
 </body>
 </html>
