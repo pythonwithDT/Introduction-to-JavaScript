@@ -26,3 +26,14 @@ console.log(document.querySelector('.js-button'));
 
 const buttonElement = document.querySelector('.js-button')
 console.log(buttonElement);
+
+
+String(25,)
+console.log('25' - 5)
+
+
+// window object
+
+window.console
+window.document
+window.alert 
