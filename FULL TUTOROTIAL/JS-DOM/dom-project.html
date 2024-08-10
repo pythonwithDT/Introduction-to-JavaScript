@@ -15,18 +15,35 @@
     " class="js-subscribe-button">Subscribe</button>
 
 
+    <p>Amazon Shipping Calculater</p>
+    <input placeholder="Cost of order" class="js-cost-input">
+    <button onclick="
+
+        calculateTotal();
+
+    ">Calculate</button>
+
+    <p></p>
+    <p></p>
+
+
     <SCript>
 
-        function subscribe () {
-            const buttonElement = document.querySelector('.js-subscribe-button');
+    function calculateTotal() {
+        const buttonElement = document.querySelector('.js-cost-input');
+        
+    }
 
-            if (buttonElement.innerText === 'Subscribe') {
-                buttonElement.innerHTML = 'Subscribed';
-            } else {
-                buttonElement.innerHTML = 'Subscribe';
-            }
-    
+    function subscribe () {
+        const buttonElement = document.querySelector('.js-subscribe-button');
+
+        if (buttonElement.innerText === 'Subscribe') {
+            buttonElement.innerHTML = 'Subscribed';
+        } else {
+            buttonElement.innerHTML = 'Subscribe';
         }
+    
+    }
 
     </SCript>
 </body>
