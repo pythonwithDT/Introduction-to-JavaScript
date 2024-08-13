@@ -23,9 +23,21 @@
       .move-button {
         background-color: rgb(25, 25, 25);
         border: 3px solid white;
-        border-radius: 50px;
-        padding: 20px 20px;
-        margin: 5px;
+        border-radius: 60px;
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      .result {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+
+      .score {
+        margin-top: 50px;
       }
 
     </style> 
@@ -49,11 +61,11 @@
     " class="move-button">
     <img src="./scissors-emoji.png" alt="" class="move-icon"></button>
 
-    <p class="js-result"></p> <!---inputing results --->
+    <p class="js-result result"></p> <!---inputing results --->
 
-    <p class="js-moves"></p>  <!---inputing moves --->
+    <p class="js-moves" class="moves"></p>  <!---inputing moves --->
 
-    <p class="js-score"></p> <!---inputing score --->
+    <p class="js-score score"></p> <!---inputing score --->
 
     <button onclick="
       score.wins = 0;
@@ -123,7 +135,7 @@
         document.querySelector('.js-result').innerHTML = result;
 
         document.querySelector('.js-moves').innerHTML 
-        = `You ${playerMove} - ${computerMove} computer`;
+        = `You ${playerMove} -  ${computerMove} computer`;
 
 
 
