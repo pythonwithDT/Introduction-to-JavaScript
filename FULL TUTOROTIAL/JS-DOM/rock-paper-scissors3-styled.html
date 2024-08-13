@@ -16,6 +16,18 @@
         font-weight: bold;
       }
 
+      .move-icon {
+        height: 50px;
+      }
+
+      .move-button {
+        background-color: rgb(25, 25, 25);
+        border: 3px solid white;
+        border-radius: 50px;
+        padding: 20px 20px;
+        margin: 5px;
+      }
+
     </style> 
 
 
@@ -24,15 +36,18 @@
     <p class="tittle">Rock Paper Scissors</p>
     <button onclick="
       playGame('rock');
-    ">Rock</button>
+    " class="move-button">
+    <img src="./rock-emoji.png" class="move-icon"></button>
 
     <button onclick="
       playGame('paper');
-    ">Paper</button>
+    " class="move-button">
+    <img src="./paper-emoji.png" alt="" class="move-icon"></button>
 
     <button onclick="
       playGame('scissors');
-    ">Scissors</button>
+    " class="move-button">
+    <img src="./scissors-emoji.png" alt="" class="move-icon"></button>
 
     <p class="js-result"></p> <!---inputing results --->
 
