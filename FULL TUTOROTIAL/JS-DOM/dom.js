@@ -18,22 +18,22 @@
 // document.body.innerHTML = '<button>Good Job</button>'
 
 
-console.log(document.querySelector('button').innerHTML);
-document.querySelector('button')
-.innerHTML = 'changed';
+// console.log(document.querySelector('button').innerHTML);
+// document.querySelector('button')
+// .innerHTML = 'changed';
 
-console.log(document.querySelector('.js-button'));
+// console.log(document.querySelector('.js-button'));
 
-const buttonElement = document.querySelector('.js-button')
-console.log(buttonElement);
-
-
-String(25,)
-console.log('25' - 5)
+// const buttonElement = document.querySelector('.js-button')
+// console.log(buttonElement);
 
 
-// window object
+// String(25,)
+// console.log('25' - 5)
 
-window.console
-window.document
-window.alert 
+
+// // window object
+
+// window.console
+// window.document
+// window.alert 
