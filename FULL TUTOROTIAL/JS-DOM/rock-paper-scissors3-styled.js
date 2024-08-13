@@ -1,91 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Rock Paper Scissors</title>
-
-    <style>
-
-      body {
-        background-color: rgb(25, 25, 25);
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .tittle {
-        font-size: 30px;
-        font-weight: bold;
-      }
-
-      .move-icon {
-        height: 50px;
-      }
-
-      .move-button {
-        background-color: rgb(25, 25, 25);
-        border: 3px solid white;
-        border-radius: 60px;
-        width: 120px;
-        height: 120px;
-        margin: 10px;
-        cursor: pointer;
-      }
-
-      .result {
-        font-size: 25px;
-        font-weight: bold;
-        margin-top: 50px;
-      }
-
-      .score {
-        margin-top: 50px;
-      }
-
-      .reset-score-button {
-        background-color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 15px;
-        cursor: pointer;
-      }
-
-    </style> 
 
 
-  </head>
-  <body>
-    <p class="tittle">Rock Paper Scissors</p>
-    <button onclick="
-      playGame('rock');
-    " class="move-button">
-    <img src="./rock-emoji.png" class="move-icon"></button>
-
-    <button onclick="
-      playGame('paper');
-    " class="move-button">
-    <img src="./paper-emoji.png" class="move-icon"></button>
-
-    <button onclick="
-      playGame('scissors');
-    " class="move-button">
-    <img src="./scissors-emoji.png" class="move-icon"></button>
-
-    <p class="js-result result"></p> <!---inputing results --->
-
-    <p class="js-moves moves"></p>  <!---inputing moves --->
-
-    <p class="js-score score"></p> <!---inputing score --->
-
-   
-    <button onclick="
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-      localStorage.removeItem('score');
-      updateScoreElement(); 
-    " class="reset-score-button">Reset Score</button>
-
-    <script>
-
+  
 
         let score = JSON.parse(localStorage.getItem('score')) || {
             wins: 0,
@@ -178,6 +93,4 @@
 
         return computerMove;
       }
-    </script>
-  </body>
-</html>
+  
