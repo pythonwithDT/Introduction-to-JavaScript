@@ -6,9 +6,13 @@
     <title>DOM Projects</title>
     <style>
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .subscribe-button {
             border: none;
-            background-color: black;
+            background-color: rgb(184, 59, 59);
             color: white;
             padding-top: 10px ;
             padding-bottom: 10px;
@@ -16,8 +20,16 @@
             padding-right: 20px;
             border-radius: 30px;
             font-weight: bold;
-
+            cursor: pointer;
+            margin-bottom: 30px;
         }
+
+        .is-subscribed {
+            background-color: hsl(0, 0%, 79%);
+            color: black;
+        }
+
+        
 
     </style>
 </head>
@@ -72,8 +84,10 @@
 
         if (buttonElement.innerText === 'Subscribe') {
             buttonElement.innerHTML = 'Subscribed';
+            buttonElement.classList.add('is-subscribed')
         } else {
             buttonElement.innerHTML = 'Subscribe';
+            buttonElement.classList.remove('is-subscribed')
         }
     
     }
