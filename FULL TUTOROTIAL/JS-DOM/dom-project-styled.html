@@ -29,6 +29,22 @@
             color: black;
         }
 
+        .cost-input {
+            font-size: 15px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+
+        .calculate-button {
+            background-color: green;
+            border: none;
+            color: white;
+            font-size: 15px;
+            padding: 15px;
+        }
+
         
 
     </style>
@@ -44,7 +60,7 @@
 
 
     <p>Amazon Shipping Calculater</p>
-    <input placeholder="Cost of order" class="js-cost-input" onkeydown="
+    <input placeholder="Cost of order" class="js-cost-input cost-input" onkeydown="
 
         handleCostKeydown(event);
 
@@ -53,7 +69,7 @@
 
         calculateTotal();
 
-    ">Calculate</button>
+    " class="calculate-button">Calculate</button>
 
     <p class="js-total-cost"></p>
     <p></p>
