@@ -5,9 +5,10 @@ function addTodo() {
     const name = inputElement.value
     
 
-    todoList.push(name);
+    todoList.push(name); 
     console.log(todoList);
-
 
     inputElement.value = ''
 }
+
+ 
