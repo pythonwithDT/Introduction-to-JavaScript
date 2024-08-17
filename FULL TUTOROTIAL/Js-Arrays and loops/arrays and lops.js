@@ -77,11 +77,12 @@
 // ho do we calculate the total?
 
 const nums = [1, 1, 3]
+
 let total = 0;  // accumlator vairable
 
 for (let i = 0; i < nums.length; i++) {
     const num = nums[i]
-    total += num
+    total = total + num
 }
  
 console.log(total)
