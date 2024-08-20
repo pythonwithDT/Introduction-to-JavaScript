@@ -178,3 +178,47 @@ while (i <= 10) {
     console.log(i);
     i++;
 }
+
+
+// how to use loops with functions
+
+// eg- using this loop on a diff array
+
+
+function doubleArray (nums) {
+    
+    const numsDoubled = [];
+
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        numsDoubled.push(num * 2);
+    }
+
+    return numsDoubled
+
+}
+
+console.log(doubleArray([1, 1, 3]));
+console.log(doubleArray([2, 2, 5]));
+
+
+// eg - if we see the number 0, stop this loop
+
+function doubleArray (nums) {
+    
+    const numsDoubled = [];
+
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        if (num === 0 ) {
+            return numsDoubled;
+        }
+        numsDoubled.push(num * 2);
+    }
+
+    return numsDoubled
+
+}
+
+console.log(doubleArray([1, 1, 3]));
+console.log(doubleArray([2, 2, 5, 0, 9]));
