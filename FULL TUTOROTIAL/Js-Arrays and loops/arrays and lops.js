@@ -71,30 +71,110 @@
 
 
 
-// Accumlator pattern
+// // Accumlator pattern
 
-// we have an array of numbers 
-// ho do we calculate the total?
+// // we have an array of numbers 
+// // ho do we calculate the total?
 
-const nums = [1, 1, 3]
+// const nums = [1, 1, 3]
 
-let total = 0;  // accumlator vairable
+// let total = 0;  // accumlator vairable
 
-for (let i = 0; i < nums.length; i++) {
-    const num = nums[i]
-    total = total + num
-}
+// for (let i = 0; i < nums.length; i++) {
+//     const num = nums[i]
+//     total = total + num
+// }
  
-console.log(total)
+// console.log(total)
 
-// create a copy of the array where each number is doubled 
+// // create a copy of the array where each number is doubled 
 
-const numsDoubled = [];
+// const numsDoubled = [];
 
-for (let i = 0; i < nums.length; i++) {
-    const num = nums[i];
-    numsDoubled.push(num * 2);
+// for (let i = 0; i < nums.length; i++) {
+//     const num = nums[i];
+//     numsDoubled.push(num * 2);
+// }
+
+// console.log(numsDoubled)
+
+
+// // arrays are references 
+
+// // arrays
+
+// const array1 = [1, 2, 3];
+// const array2 = array1
+// array2.push(4);
+// console.log(array1);
+// console.log(array2);
+
+
+// // destructuring 
+//  // eg - get the fist and second calue out of this array  
+//  // const array3 = [1, 2, 3];
+ 
+//  // normal way --- // const firstValue = array3[0];
+//                     //  const secondValue = array3[1]
+
+// // destructuring way
+
+// const [firstValue, secondValue]= [1, 2, 3];
+
+// console.log(firstValue)
+
+
+// // loops 
+
+// // - break ==> exit a loop early 
+// // - continue ==> skip 1 iteration
+
+// // eg- create a loop that counts from 1 to 10 ==== when i = 8, stop the loop early 
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+//     if (i === 8) {
+//         break;
+//     } 
+// }
+
+
+// // eg- create a loop that counts from 1 to 10 ==== when i = 8, stop the loop early  == skip the number when its 3
+
+// for (let i = 1; i <= 10; i++) {
+//     if (i === 3) {
+//         continue;
+//     }
+//     console.log(i);
+//     if (i === 8) {
+//         break;
+//     } 
+// }
+
+
+// // skip a number if its divisible by 3 
+
+// for (let i = 1; i <= 10; i++) {
+//     if (i % 3) {
+//         continue;
+//     }
+//     console.log(i);
+//     if (i === 8) {
+//         break;
+//     } 
+// }
+
+
+// using continue in while loop
+// eg- count from 1 to 10 usig a while loop === skip numbers that are divisible by 3 (3, 6, 9)
+
+let i = 1
+
+while (i <= 10) {
+    if (i % 3 === 0) {
+        i++
+        continue;
+    }
+    console.log(i);
+    i++;
 }
-
-console.log(numsDoubled)
-
