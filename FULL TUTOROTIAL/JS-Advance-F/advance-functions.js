@@ -67,14 +67,16 @@
 // console.log('next line');
 
 
-// setInterval()
+// // setInterval()
 
-setInterval(function() { // ==> this is the function we want to run in the future
-    console.log('interval')
-}, 3000); // ==> this is how long to wait before running the function (this is a number in milliseconds 1000milliseconds = 1sec)
-            // ==> this keep running every 3secods 
+// setInterval(function() { // ==> this is the function we want to run in the future
+//     console.log('interval')
+// }, 3000); // ==> this is how long to wait before running the function (this is a number in milliseconds 1000milliseconds = 1sec)
+//             // ==> this keep running every 3secods 
 
-console.log('next line 2');
+// console.log('next line 2');
+
+
 
 
 
