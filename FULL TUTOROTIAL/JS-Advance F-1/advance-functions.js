@@ -77,9 +77,21 @@
 // console.log('next line 2');
 
 
-// another way to loop through an array 
+// // another way to loop through an array 
 
-// forEach ===> is the prefered way to loop through an array
+// // forEach ===> is the prefered way to loop through an array
+
+// [
+//     'make dineer',
+//     'wash dishes',
+//     'watch youtube'
+// ].forEach(function(value, index) {  // the array's value is stored into the parameter(value). 
+//                             // so loops through it and picks it one by one anytime its called
+//     console.log(value);
+// });
+
+
+// if value is "wash dishes", we are going to skip it
 
 [
     'make dineer',
@@ -87,7 +99,8 @@
     'watch youtube'
 ].forEach(function(value, index) {  // the array's value is stored into the parameter(value). 
                             // so loops through it and picks it one by one anytime its called
+    if (value === 'wash dishes') {
+        return;
+    }
     console.log(value);
 });
-
-
