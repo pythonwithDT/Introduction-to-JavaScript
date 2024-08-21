@@ -14,7 +14,7 @@ function renderTodoList () {  // a function to be able to reuse the code anytime
 
     let todoListHTML = ''  // this is a accumulator variable. this gets the results.
 
-    todoList.forEach(function(todoObject, index) {
+    todoList.forEach( (todoObject, index) => {
         // const todoObject = todoList[index]; // this picks out each value in the array(get the string of each index)
         // const name = todoObject.name;
         // const dueDate = todoObject.dueDate;

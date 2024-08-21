@@ -10,11 +10,16 @@ let isAutoPlaying = false;
 
 let intervalId;
 
+// // this could be written as an arrow function as 
+// const autoPlay = () => {
+
+// }
+
 function autoPlay() {
 
   if (!isAutoPlaying) {
 
-    intervalId = setInterval(function() {
+    intervalId = setInterval( () => {
       const playerMove = pickComputerMove()
       playGame(playerMove);
     }, 1000);

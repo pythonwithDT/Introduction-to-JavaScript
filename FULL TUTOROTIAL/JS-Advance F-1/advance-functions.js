@@ -97,7 +97,7 @@
     'make dineer',
     'wash dishes',
     'watch youtube'
-].forEach(function(value, index) {  // the array's value is stored into the parameter(value). 
+].forEach( (value, index) => {  // the array's value is stored into the parameter(value). 
                             // so loops through it and picks it one by one anytime its called
     if (value === 'wash dishes') {
         return;
