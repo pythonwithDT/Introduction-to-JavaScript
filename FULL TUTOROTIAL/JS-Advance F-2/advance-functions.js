@@ -1,55 +1,55 @@
-// // Arrow functions 
+Arrow functions 
 
-// // regualar functions 
+// regualar functions 
 
-// const regualarFunction = function(param, param1) {
-//     console.log('hello');
-//     return(5);
-// }
-// regualarFunction();
-
-
-// // arrow function
-
-// const arrowFunctions = (param, param2) => {
-//     console.log('hello')
-//     return(10);
-// };
-// arrowFunctions();
+const regualarFunction = function(param, param1) {
+    console.log('hello');
+    return(5);
+}
+regualarFunction();
 
 
-// // differences
+// arrow function
 
-// const oneParam = (param) => {
-//     console.log(param + 1);
-// };
-// oneParam(2)
-
-
-// // one-line arrow funtion 
-// // when an arrow function has only one line we cann put them on one line 
-
-// const oneLine = () => {  // remove the brackets
-//     return 2 + 3; // remove the return 
-// }
-
-// const oneLine = () =>  2 + 3;  // this is the shorter way
-// console.log(oneLine());
+const arrowFunctions = (param, param2) => {
+    console.log('hello')
+    return(10);
+};
+arrowFunctions();
 
 
-// using arrow functions inside an object
+// differences
 
-// const object2 = {
-//     method: () => {
-
-//     }, 
-//     method() {  // shorthad method synthax ==> when saving a function in an abject we use this 
-
-//     }
-// }
+const oneParam = (param) => {
+    console.log(param + 1);
+};
+oneParam(2)
 
 
-// Add eventListner 
+// one-line arrow funtion 
+// when an arrow function has only one line we cann put them on one line 
+
+const oneLine = () => {  // remove the brackets
+    return 2 + 3; // remove the return 
+}
+
+const oneLine = () =>  2 + 3;  // this is the shorter way
+console.log(oneLine());
+
+
+using arrow functions inside an object
+
+const object2 = {
+    method: () => {
+
+    }, 
+    method() {  // shorthad method synthax ==> when saving a function in an abject we use this 
+
+    }
+}
+
+
+Add eventListner 
 
 
 
