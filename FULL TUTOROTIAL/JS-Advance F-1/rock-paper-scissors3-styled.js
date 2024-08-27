@@ -16,6 +16,14 @@ let intervalId;
 // }
 
 document.querySelector('.reset-score-button').addEventListener('click', () => {
+  score = {
+    wins: 0,
+    losses: 0,
+    ties: 0
+  };
+
+  localStorage.removeItem('score');
+
   updateScoreElement();
 })
 
