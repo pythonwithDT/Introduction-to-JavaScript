@@ -15,6 +15,10 @@ let intervalId;
 
 // }
 
+document.querySelector('.reset-score-button').addEventListener('click', () => {
+  updateScoreElement();
+})
+
 function autoPlay() {
 
   if (!isAutoPlaying) {
