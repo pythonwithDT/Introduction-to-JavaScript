@@ -15,17 +15,7 @@ let intervalId;
 
 // }
 
-document.querySelector('.reset-score-button').addEventListener('click', () => {
-  score = {
-    wins: 0,
-    losses: 0,
-    ties: 0
-  };
 
-  localStorage.removeItem('score');
-
-  updateScoreElement();
-})
 
 function autoPlay() {
 
@@ -54,6 +44,22 @@ document.querySelector('.js-paper-button').addEventListener('click', () => {
 
 document.querySelector('.js-scissors-button').addEventListener('click', () => {
   playGame('scissors');
+})
+
+document.querySelector('.reset-score-button').addEventListener('click', () => {
+  score = {
+    wins: 0,
+    losses: 0,
+    ties: 0
+  };
+
+  localStorage.removeItem('score');
+
+  updateScoreElement();
+});
+
+document.querySelector('.auto-play-button').addEventListener('click', () => {
+  autoPlay();
 })
 
 
