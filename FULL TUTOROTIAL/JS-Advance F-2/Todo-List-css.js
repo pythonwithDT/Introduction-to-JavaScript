@@ -22,12 +22,7 @@ function renderTodoList () {  // a function to be able to reuse the code anytime
         const html = `
         <div> ${name} </div>
         <div>${dueDate}</div>
-        <button onclick="
-    
-            todoList.splice(${index}, 1); 
-            renderTodoList();
-    
-        " class= "delete-todo-button">Delete</button> 
+        <button class= "delete-todo-button js-delete-button">Delete</button> 
         </div>
         `; // create an html to get any value or index in the array  --- the paragrah now contains the name and duedate displayed on the html as well as the button added to it 
         todoListHTML += html;  // this adds the hmtl to to the ccumulator variable at the top.  
@@ -36,7 +31,19 @@ function renderTodoList () {  // a function to be able to reuse the code anytime
     
     document.querySelector('.js-todo-list').innerHTML = todoListHTML;  // this gets the div and puts the p-tag into the div.
     
+    document.querySelectorAll('.js-delete-button').forEach ( (deleteButton, index) => {
+        deleteButton.addEventListener('click', () => {
+            todoList.splice(index, 1); 
+            renderTodoList();
+        });
+    })
+
 }
+
+
+document.querySelector('.js-add-todo-button').addEventListener('click', () => {
+    addTodo();
+    });
 
 // const todoList = []; // create an empty array to stroe todolist items 
 

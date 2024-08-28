@@ -68,3 +68,6 @@
 // buttonElement.addEventListener('click', () => {
 //     console.log('click2')
 // });
+
+
+// More features that use functions as values 
