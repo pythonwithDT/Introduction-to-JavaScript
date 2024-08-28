@@ -71,3 +71,18 @@
 
 
 // More features that use functions as values 
+// Array Methods ==> .filter() and .map()
+
+// .filter()
+// removing negative numbers from an array [1, -3, 5]
+
+console.log([1, -3, 5]. filter((value, index) => { // filter has two parameters => the value & => index 
+    // if (value >= 0) {
+    //     return true;
+    // }
+    //  else {
+    //     return false;
+    //  }
+     // shortened method 
+     return value >= 0
+}))
