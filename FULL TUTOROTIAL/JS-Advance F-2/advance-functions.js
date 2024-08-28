@@ -76,7 +76,8 @@
 // .filter()
 // removing negative numbers from an array [1, -3, 5]
 
-console.log([1, -3, 5]. filter((value, index) => { // filter has two parameters => the value & => index 
+console.log([1, -3, 5]. filter((value, index) => { // filter has two parameters => the value & => index
+                                                // takes a value saves it in the function and runs it 
     // if (value >= 0) {
     //     return true;
     // }
@@ -86,3 +87,21 @@ console.log([1, -3, 5]. filter((value, index) => { // filter has two parameters 
      // shortened method 
      return value >= 0
 }))
+
+// .map()
+// making a copy of an array with each number doubled
+
+console.log([1, 1, 3 ].map( (value, index) => { // filter has two parameters => the value & => index 
+    // return 10 
+    return value * 10  // using the value in the return
+})); 
+// .map() => transforms an array into another array 
+
+// shortcuts of arrow functions
+
+console.log([1, 1, 3 ].map(value => value * 2))
+
+
+// Closure
+// => if a functionhas acces to a value
+// => it will always have access to that value
