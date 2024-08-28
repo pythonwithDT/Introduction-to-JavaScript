@@ -105,3 +105,5 @@ console.log([1, 1, 3 ].map(value => value * 2))
 // Closure
 // => if a functionhas acces to a value
 // => it will always have access to that value
+
+
